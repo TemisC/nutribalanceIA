@@ -1,0 +1,7 @@
+{
+  "name": "NutriFit AI Pro - SaaS Platform",
+  "description": "A comprehensive AI-powered nutrition and fitness advisor with image analysis, plan generation, and gamified progress tracking.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

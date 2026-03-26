@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "target": "es2016",
+        "module": "commonjs",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "src/migrations.ts",
+        "src/migrations_community.ts",
+        "src/migrations_community_interactions.ts",
+        "src/migrations_meal_plans.ts",
+        "src/migrations_subscription.ts",
+        "src/migration_add_coach_columns.ts",
+        "src/add_billing_date.ts",
+        "src/add_expiration_column.ts",
+        "src/add_streak_column.ts"
+    ]
+}

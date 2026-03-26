@@ -1,0 +1,989 @@
+
+> nutrifit-api@1.0.0 dev
+> nodemon src/index.ts
+
+[33m[nodemon] 3.1.11[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: ts,json[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\models\messageModel.ts:32:16
+    at Generator.next (<anonymous>)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\models\messageModel.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\models\messageModel.ts:4:12)
+    at initMessageTable (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\models\messageModel.ts:19:44)
+    at Object.<anonymous> (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:36:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Module.m._compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1618:23) {
+  code: 'ETIMEDOUT',
+  errno: undefined,
+  sql: undefined,
+  sqlState: undefined,
+  sqlMessage: undefined
+}
+❌ Database connection failed: Error: connect ETIMEDOUT
+    at PoolConnection._handleTimeoutError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\mysql2\lib\base\connection.js:200:17)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+❌ Failed to connect to DB. Exiting...
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/index.ts(81,78): error TS2304: Cannot find name 'migErr'.
+src/index.ts(85,9): error TS1472: 'catch' or 'finally' expected.
+
+    at createTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) {
+  diagnosticCodes: [ 2304, 1472 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+Messages table initialized
+✅ 'image_url' column added.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\express\lib\application.js:635:24)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:119:28
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:38:58)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+Messages table initialized
+ℹ️ 'image_url' column already exists.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\express\lib\application.js:635:24)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:119:28
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:38:58)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+ℹ️ 'image_url' column already exists.
+Messages table initialized
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\express\lib\application.js:635:24)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:133:28
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:38:58)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+Messages table initialized
+ℹ️ 'image_url' column already exists.
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\express\lib\application.js:635:24)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:133:28
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:38:58)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+ℹ️ 'image_url' column already exists.
+Messages table initialized
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+🚀 Server running on port 5000
+🌍 Environment: development
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+Messages table initialized
+ℹ️ 'image_url' column already exists.
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\express\lib\application.js:635:24)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:133:28
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:38:58)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/index.ts(14,10): error TS2305: Module '"./models/mealPlanModel"' has no exported member 'initMealTable'.
+
+    at createTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) {
+  diagnosticCodes: [ 2305 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+Messages table initialized
+Meal Logs table initialized
+ℹ️ 'image_url' column already exists.
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\express\lib\application.js:635:24)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:135:28
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:38:58)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/routes/userRoutes.ts(31,10): error TS2305: Module '"../controllers/userController"' has no exported member 'saveMeal'.
+src/routes/userRoutes.ts(31,20): error TS2305: Module '"../controllers/userController"' has no exported member 'getMeals'.
+src/routes/userRoutes.ts(31,30): error TS2305: Module '"../controllers/userController"' has no exported member 'deleteUserMeal'.
+
+    at createTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) {
+  diagnosticCodes: [ 2305, 2305, 2305 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+ℹ️ 'image_url' column already exists.
+Meal Logs table initialized
+Messages table initialized
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\express\lib\application.js:635:24)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:135:28
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:38:58)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+Meal Logs table initialized
+Messages table initialized
+ℹ️ 'image_url' column already exists.
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+[32m[nodemon] restarting due to changes...[39m
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+Meal Logs table initialized
+Messages table initialized
+ℹ️ 'image_url' column already exists.
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\express\lib\application.js:635:24)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:135:28
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:38:58)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/index.ts(43,8): error TS2300: Duplicate identifier 'path'.
+src/index.ts(59,8): error TS2300: Duplicate identifier 'path'.
+
+    at createTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) {
+  diagnosticCodes: [ 2300, 2300 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/index.ts(43,8): error TS2300: Duplicate identifier 'path'.
+src/index.ts(59,8): error TS2300: Duplicate identifier 'path'.
+
+    at createTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) {
+  diagnosticCodes: [ 2300, 2300 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+[Init] Created uploads directory at: C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\public\uploads
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+Messages table initialized
+Meal Logs table initialized
+ℹ️ 'image_url' column already exists.
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+🚀 Server running on port 5000
+🌍 Environment: development
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+Messages table initialized
+ℹ️ 'image_url' column already exists.
+Meal Logs table initialized
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\express\lib\application.js:635:24)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:145:28
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:38:58)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\models\messageModel.ts:41:16
+    at Generator.next (<anonymous>)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\models\messageModel.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\models\messageModel.ts:4:12)
+    at initMessageTable (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\models\messageModel.ts:27:44)
+    at Object.<anonymous> (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:41:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Module.m._compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1618:23) {
+  code: 'ETIMEDOUT',
+  errno: undefined,
+  sql: undefined,
+  sqlState: undefined,
+  sqlMessage: undefined
+}
+Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\models\userModel.ts:676:16
+    at Generator.next (<anonymous>)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\models\userModel.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\models\userModel.ts:4:12)
+    at initMealTable (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\models\userModel.ts:659:41)
+    at Object.<anonymous> (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:42:14)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Module.m._compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1618:23) {
+  code: 'ETIMEDOUT',
+  errno: undefined,
+  sql: undefined,
+  sqlState: undefined,
+  sqlMessage: undefined
+}
+❌ Database connection failed: Error: connect ETIMEDOUT
+    at PoolConnection._handleTimeoutError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\mysql2\lib\base\connection.js:200:17)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+❌ Failed to connect to DB. Exiting...
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/userController.ts(513,1): error TS1472: 'catch' or 'finally' expected.
+
+    at createTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) {
+  diagnosticCodes: [ 1472 ]
+}
+🔌 DB Pool Created. Limit: 3
+C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/userController.ts(513,1): error TS1472: 'catch' or 'finally' expected.
+
+    at createTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) {
+  diagnosticCodes: [ 1472 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/userController.ts(10,5): error TS2300: Duplicate identifier 'findUsersByCoachId'.
+src/controllers/userController.ts(11,5): error TS2300: Duplicate identifier 'getLeaderboard'.
+src/controllers/userController.ts(12,5): error TS2300: Duplicate identifier 'getCommunityStats'.
+src/controllers/userController.ts(13,5): error TS2300: Duplicate identifier 'findUsersByCoachId'.
+src/controllers/userController.ts(14,5): error TS2300: Duplicate identifier 'getLeaderboard'.
+src/controllers/userController.ts(15,5): error TS2300: Duplicate identifier 'getCommunityStats'.
+src/controllers/userController.ts(13,5): error TS1005: ',' expected.
+src/controllers/userController.ts(519,1): error TS1472: 'catch' or 'finally' expected.
+
+    at createTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) {
+  diagnosticCodes: [
+    2300, 2300, 2300,
+    2300, 2300, 2300,
+    1005, 1472
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/userController.ts(516,1): error TS1472: 'catch' or 'finally' expected.
+
+    at createTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) {
+  diagnosticCodes: [ 1472 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+ℹ️ 'image_url' column already exists.
+Messages table initialized
+Meal Logs table initialized
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\express\lib\application.js:635:24)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:147:28
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:38:58)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+Messages table initialized
+Meal Logs table initialized
+ℹ️ 'image_url' column already exists.
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+🚀 Server running on port 5000
+🌍 Environment: development
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+Messages table initialized
+Meal Logs table initialized
+ℹ️ 'image_url' column already exists.
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\express\lib\application.js:635:24)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:147:28
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:38:58)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+Messages table initialized
+Meal Logs table initialized
+ℹ️ 'image_url' column already exists.
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+🚀 Server running on port 5000
+🌍 Environment: development
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+Meal Logs table initialized
+Messages table initialized
+ℹ️ 'image_url' column already exists.
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\express\lib\application.js:635:24)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:147:28
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:38:58)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 3
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+Messages table initialized
+ℹ️ 'image_url' column already exists.
+Meal Logs table initialized
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\express\lib\application.js:635:24)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:147:28
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:38:58)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 10
+C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/messageController.ts(34,15): error TS2451: Cannot redeclare block-scoped variable 'messages'.
+src/controllers/messageController.ts(41,16): error TS2451: Cannot redeclare block-scoped variable 'messages'.
+src/controllers/messageController.ts(41,39): error TS2304: Cannot find name 'pool'.
+src/controllers/messageController.ts(56,21): error TS2304: Cannot find name 'receiverId'.
+src/controllers/messageController.ts(56,33): error TS2304: Cannot find name 'receiverId'.
+
+    at createTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) {
+  diagnosticCodes: [ 2451, 2451, 2304, 2304, 2304 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 10
+C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/messageController.ts(64,15): error TS2304: Cannot find name 'msg'.
+src/controllers/messageController.ts(65,13): error TS2304: Cannot find name 'timestamp'.
+src/controllers/messageController.ts(65,24): error TS2304: Cannot find name 'msg'.
+src/controllers/messageController.ts(66,17): error TS2304: Cannot find name 'read'.
+src/controllers/messageController.ts(66,23): error TS2695: Left side of comma operator is unused and has no side effects.
+src/controllers/messageController.ts(66,25): error TS2304: Cannot find name 'msg'.
+src/controllers/messageController.ts(67,21): error TS2304: Cannot find name 'senderId'.
+src/controllers/messageController.ts(67,31): error TS2304: Cannot find name 'msg'.
+src/controllers/messageController.ts(68,25): error TS2304: Cannot find name 'receiverId'.
+src/controllers/messageController.ts(68,37): error TS2304: Cannot find name 'msg'.
+src/controllers/messageController.ts(69,29): error TS2304: Cannot find name 'type'.
+src/controllers/messageController.ts(69,35): error TS2304: Cannot find name 'msg'.
+src/controllers/messageController.ts(72,14): error TS2304: Cannot find name 'enrichedMessages'.
+src/controllers/messageController.ts(75,5): error TS2304: Cannot find name 'res'.
+src/controllers/messageController.ts(65,22): error TS1005: ';' expected.
+src/controllers/messageController.ts(66,21): error TS1005: ';' expected.
+src/controllers/messageController.ts(67,29): error TS1005: ';' expected.
+src/controllers/messageController.ts(68,35): error TS1005: ';' expected.
+src/controllers/messageController.ts(69,33): error TS1005: ';' expected.
+src/controllers/messageController.ts(70,6): error TS1472: 'catch' or 'finally' expected.
+src/controllers/messageController.ts(70,7): error TS1128: Declaration or statement expected.
+src/controllers/messageController.ts(73,3): error TS1005: ',' expected.
+src/controllers/messageController.ts(77,1): error TS1128: Declaration or statement expected.
+
+    at createTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) {
+  diagnosticCodes: [
+    2304, 2304, 2304, 2304,
+    2695, 2304, 2304, 2304,
+    2304, 2304, 2304, 2304,
+    2304, 2304, 1005, 1005,
+    1005, 1005, 1005, 1472,
+    1128, 1005, 1128
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+🔌 DB Pool Created. Limit: 10
+✅ Connected to MySQL Database!
+🛠️ Running Emergency Migration: Fixing 'type' column...
+✅ 'type' column modified to VARCHAR(50).
+Messages table initialized
+Meal Logs table initialized
+ℹ️ 'image_url' column already exists.
+ℹ️ 'type' column already exists in messages.
+🔄 Checking database migrations...
+✅ Migrations verified.
+🔄 Checking community migrations...
+✅ Community migrations verified.
+🔄 Checking community interaction migrations...
+✅ Community interactions verified.
+🔄 Checking Subscription migrations...
+✅ Subscription migrations check complete.
+🔄 Checking Meal Plan migrations...
+✅ Meal Plan migrations verified.
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\node_modules\express\lib\application.js:635:24)
+    at C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:147:28
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\TEMIS\Documents\git\nutrifit-saas\nutrifit-ai-pro\server\src\index.ts:38:58)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
